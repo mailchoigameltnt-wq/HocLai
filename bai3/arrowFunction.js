@@ -52,3 +52,21 @@ const {name,age,city} = person1;
 console.log(name);
 console.log(age);
 console.log(city);
+
+//default parameters
+function greet1(name= 'Guest') {
+	console.log(`Hello ${name}!`);
+}
+
+greet1();
+greet1('John')
+
+function createFullName(firstName, lastName = 'Doe') {
+	console.log(`${firstName} ${lastName}`);
+}
+
+createFullName('John');
+createFullName('Jane','smith');
+
+
+
